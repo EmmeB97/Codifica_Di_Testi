@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE teiCorpus SYSTEM "tei_all.dtd">
+<?xml-stylesheet type="text/xsl" href="stile.xsl"?> <!-- COLLEGAMENTO CON IL FILE XSL -->
+
+<teiCorpus version="3.3.0" xmlns="http://www.tei-c.org/ns/1.0">
+	<!-- header -->
+	<teiHeader> <!-- fornisce metadati descrittivi e dichiarativi associati a una risorsa digitale o a un insieme di risorse. -->
+		<fileDesc> <!--  (descrizione del file) contiene una descrizione bibliografica completa di un file elettronico. -->
+			<titleStmt> <!-- (dichiarazione sul titolo) raggruppa le informazioni sul titolo di un'opera e sulle responsabilità del suo contenuto intellettuale. -->
+				<title type="main">Cartoline ad Olivia Turtura</title>
+
+				<respStmt> <!-- (dichiarazione di responsabilità) fornisce una dichiarazione di responsabilità per qualcuno responsabile del contenuto intelletuale di un testo, curatela, registrazione o collana, nel caso in cui gli elementi specifici per autore, curatore ecc. non sono sufficienti o non applicabili. -->
+					<resp>Trascrizione digitale a cura di: </resp> <!-- (responsabilità) contiene una frase che descrive la natura della responsabilità intellettuale di una persona.  -->
+					    <name ref="#MCB">Maria Chiara Bertagni, </name>
+					    <name ref="#CT">Claudio Tamburini e </name> 
+					    <name ref="#AT">Aurora Toti</name>
+				</respStmt>
+
+				<respStmt>
+					<resp>Ente di appartenenza:</resp>
+					    <name type="#comune" xml:id="SP">Comune di La Spezia</name>
+				</respStmt>
+			</titleStmt>
+
+			<editionStmt> <!-- (dichiarazione sull'edizione) raggruppa le informazioni riguardo una edizione di un testo. -->
+				<edition>Studenti iscritti al corso di studi di Informatica Umanistica, Università di Pisa.
+					<date when="2022-12">Dicembre 2022</date>
+				</edition>
+				<respStmt>
+					<resp>codifica di:</resp>
+					    <name ref="#MCB">Maria Chiara Bertagni, </name>
+					    <name ref="#CT">Claudio Tamburini e </name> 
+					    <name ref="#AT">Aurora Toti</name>
+				</respStmt>
+				<respStmt>
+					<resp>Compilato da:</resp>
+					    <name ref="#TC">Tommaso Castagneto </name>
+				</respStmt>
+				<respStmt>
+					<resp>Responsabile scientifico:</resp>
+					    <name ref="#GP">Paolicchi G. ,</name>
+					    <name ref="#ES">Salvatori E.</name>
+				</respStmt>
+				<respStmt>
+					<resp>Funzionario responsabile:</resp>
+					    <name ref="#ER">Ratti E.</name>
+				</respStmt>
+			</editionStmt>
+
+			<publicationStmt> <!-- (dichiarazione sulla pubblicazione) raggruppa le informazioni riguardo la pubblicazione o la distribuzione di un documento elettronico o di altra natua. -->
+				<publisher>Università di Pisa</publisher> <!-- Ente o persona che ha pubblicato il documento -->
+                <pubPlace>Pisa</pubPlace> <!-- Luogo di pubblicazione -->
+                <availability status="restricted"><p>Accessibile per ricerche accademiche</p></availability> <!-- accessibilità al documento -->
+                <date when="2023">2023</date> 
+			</publicationStmt>
+
+			<sourceDesc><!-- (descrizione della fonte) fornisce una descrizione relativa alla o alle fonti da cui è derivato o generato un documento elettronico. -->
+				<bibl>
+					<title>Le sorgenti</title>
+					<publisher>
+						<unclear reason="non presente">[...]</unclear>
+					</publisher>
+                 </bibl>
+                <msDesc> <!-- (decrizione del manoscritto) contiene la descrizione di un unico manoscritto -->
+                    <msIdentifier> <!-- (identificatore del manoscritto) contiene l'informazione necessaria a identificare il manoscritto esaminato -->
+                        <country key="IT">Italy</country> <!-- (country) contiene il nome di un'unità geopolitica, come una nazione, un paese, una colonia, o un'unione di stati, che sia più ampia o amministrativamente superiore rispetto a una regione ma di dimensioni inferiori rispetto a un blocco -->
+                        <settlement type="city">La Spezia</settlement> <!-- (settlement) contiene il nome di un insediamento quale una città o un comune considerati come unità geopolitica o amministrativa  -->
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei
+                            cimeli garibaldini e della Prima Guerra Mondiale</repository> <!-- (repository) contiene il nome di un deposito, parte o meno di un'istituzione, nel quale sono conservati i manoscritti -->
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+
+
+    <!--  Prima cartolina -->
+    <TEI xml:id="cart220">
+    	<teiHeader>
+    		<fileDesc>
+    			<titleStmt>
+    				<title type="main">Edizione digitale di "Donna con cane"</title>
+
+
+    				<respStmt>
+    					<resp>Trascrizione digitale a cura di:</resp>
+    					<name ref="#MCB">Maria Chiara Bertagni, </name>
+    					<name ref="#CT">Claudio Tamburini e </name>
+    					<name ref="#AT">Aurora Toti</name>
+    				</respStmt>
+
+    				<respStmt>
+                        <resp>Ente di Appartenenza:</resp>
+                        <name type="comune" ref="#SP">Comune di La Spezia</name>
+                    </respStmt>
+                </titleStmt>
+
+
+                <editionStmt>
+                	<edition>Studenti iscritti al corso di studi di Informatica Umanistica, Università di Pisa.
+                		<date when="2022-12">Dicembre 2022</date>
+                	</edition>
+
+                    <respStmt>
+                        <resp>codifica di:</resp>
+                        <name ref="#MCB">Maria Chiara Bertagni, </name>
+                        <name ref="#CT">Claudio Tamburini e </name>
+                        <name ref="#AT">Aurora Toti</name>
+                    </respStmt>
+
+                    <respStmt>
+                        <resp>Compilato da:</resp>
+                        <name ref="#TC">Tommaso Castagneto</name>
+                    </respStmt>
+
+                    <respStmt>
+                        <resp>Responsabile scientifico:</resp>
+                        <name ref="#GP">Paolicchi G.</name>
+                        <name ref="#ES">Salvatori E.</name>
+                    </respStmt>
+
+                    <respStmt>
+                        <resp>Funzionario responsabile</resp>
+                        <name ref="#ER">Ratti E.</name>
+                    </respStmt>
+                </editionStmt>
+
+
+                <publicationStmt>
+                	<publisher>Università di Pisa</publisher>
+                	<pubPlace>Pisa</pubPlace>
+                	<availability status="restricted">
+                		<p>Accessibile per ricerche accademiche</p>
+                	</availability>
+                	<date when="2022">2022</date>
+                </publicationStmt>
+
+                <sourceDesc>
+                	<bibl>
+                        <title>Donna con cane</title>
+                    </bibl>
+                	<msDesc>
+                		<msIdentifier>
+                			<country key="IT">Italia</country>
+                			<settlement>La Spezia (SP)</settlement>
+                			<repository>Museo Civico Etnografico "Giovanni Podenzana", sezione dei cimeli garibaldini e della Prima Guerrra Mondiale.</repository>
+                			<idno>7694_220_001/002</idno>
+                		</msIdentifier>
+
+                		<msContents> <!--  (contenuto del manoscritto) descrive il contenuto intellettuale di un manoscritto o di una sua parte tramite una serie di paragrafi o brani del manoscritto  -->
+                			<summary>Cartolina artistica indirizzata ad Olivia Turtura, da parte di Giovanni Coliola, durante gli anni della Grande Guerra.</summary> <!-- (summary) contiene una panoramica delle informazioni disponibili riguardanti alcuni aspetti di un articolo o di un oggetto (ad esempio, il suo contenuto intellettuale, la storia, il layout, la tipografia ecc.) come complemento o alternativa alle informazioni più dettagliate fornite da elementi più specifici. -->
+                			<textLang>Italiano</textLang>
+                		</msContents>
+
+                		<physDesc> <!-- (descrizione fisica) contiene una descrizione fisica completa di un manoscritto o di una sua parte. -->
+                			<objectDesc> <!-- (object description) contiene una descrizione delle componenti fisiche che costituiscono l'oggetto descritto. -->
+                				<supportDesc> <!-- (descrizione del supporto) raggruppa gli elementi che descrivono il supporto fisico della parte scritta di un manoscritto -->
+                					<support> <!-- (support) contiene una descrizione dei materiali, ecc. che costituiscono il supporto fisico della parte scritta di un manoscritto  -->
+                						<objectType>Cartolina artistica</objectType> <!-- (objectType) contiene una parola o una frase che descrive il tipo di oggetto a cui si fa riferimento. -->
+                						<material>Carta</material>
+                						<dimensions unit="cm">
+                							<height>9</height>
+                							<width>14</width>
+                						</dimensions>
+                						</support>
+                						<condition>Buono</condition>
+                					</supportDesc>
+                				</objectDesc>
+
+                				<handDesc> <!-- (handDesc) contiene una descrizione dei diversi tipi di scrittura usati in un manoscritto -->
+                					<handNote scribe="catalogatore" medium="pencil" scope="minor"> <!-- (handNote) descrive un determinato stile o una determinata mano all'interno di un manoscritto -->
+                						<p>
+                							In alto a destra della cartolina è riportato il numero <num value="220">220</num> usato per la catalogazione.
+                						</p>
+                					</handNote>
+                					<handNote scribe="tipografo" medium="black-ink" scope="minor">
+                						<p>
+                							All'interno della cartolina è riportata una stampa.
+                						</p>
+                					</handNote>
+                				</handDesc>
+                			</physDesc>
+                		</msDesc>
+
+
+                		<listPerson> <!-- (listPerson) contiene una lista di descrizioni, ciascuna delle quali fornisce informazioni relative a una persona specifica o a un gruppo di persone, per esempio i partecipanti a un'interazione verbale o le persone identificate da una fonte storica-->
+                			<person>
+                				<persName ref="#OT">
+                					<forename>Olivia</forename>
+                					<surname>Turtura</surname>
+                				</persName>
+                				<sex>F</sex>
+                			</person>
+                			<person>
+                				<persName ref="#GC">
+                					<forename>Giovanni</forename>
+                					<surname>Coliola</surname>
+                				</persName>
+                				<sex>M</sex>
+                			</person>
+                		</listPerson>
+
+                		<listPlace> <!-- (listPlace) contiene un elenco di luoghi, che può essere seguito da un elenco di relazioni definite tra i luoghi. -->
+                			<place>
+                				<placeName>Ravenna</placeName>
+                				<settlement type="località">Città</settlement>
+                				<district type="provincia">RV</district>
+                				<country key="IT">Italia</country>
+                			</place>
+                			<place>
+                				<placeName>Modena</placeName>
+                				<settlement type="località">Città</settlement>
+                				<district type="provincia">MO</district>
+                				<country key="IT">Italia</country>
+                			</place>
+                		</listPlace>
+                	</sourceDesc>
+                </fileDesc>
+
+
+                <profileDesc> <!-- (profileDesc) fornisce una descrizione dettagliata degli aspetti non bibliografici di un testo, in modo particolare le lingue e i linguaggi secondari utilizzati, la situazione in cui è stato prodotto il testo, i partecipanti e la relativa ambientazione. -->
+                	<correspDesc> <!-- (correspDesc) contiene una descrizione delle azioni intorno a un atto di corrispondenza epistolare. -->
+                		<correspAction type="received"> <!-- (correspAction) contiene una descrizione strutturata del luogo, il nome di una persona/organizzazione e la data relativa all'invio/ricezione di un messaggio o qualsiasi altra azione relativa alla corrispondenza. -->
+                			<persName>Olivia Turtura</persName>
+                		</correspAction>
+                		<correspAction type="sent">
+                			<persName>Giovanni Coliola</persName>
+                			<date when="1918-10-28">28 ottobre 1917</date>
+                		</correspAction>
+                	</correspDesc>
+
+                	<langUsage>
+                		<language ident="it-IT" usage="100">Italiano</language>
+                	</langUsage>
+                </profileDesc>
+        </teiHeader>
+
+
+            <text type="cartolina" xml:lang="it">
+            	<body>
+            		<div type="fronte">
+            			<figure xml:id="picture220F"> <!-- picture220F(figure) contiene una porzione di testo costituita da grafici, illustrazioni o figure. -->
+            				<graphic url="7694-220F.jpg"/> <!-- (graphic) indica la posizione di un grafico, di una illustrazione o immagine. -->
+            				<head>Donna con cane</head> <!-- (head) contiene qualsiasi tipo di titolo -->
+            				<figDesc>
+            					Nell'immagine è rappresentata una donna con un cane su di un tavolo.
+            				</figDesc>
+            			</figure>
+            		</div>
+
+
+            		<!-- Trascrizione del retro della cartolina 220 -->
+            		<div type="retro">
+            			<div type="codice">
+            				<p>
+            					<lb xml:id="num220R" facs="#rigastamp220R"/> 
+            					<!-- lb = segna l'inizio di una nuova riga -->
+            					<num type="cardinal">220</num>
+            				</p>
+            			</div>
+
+
+            			<div type="timbro" facs="#rigastamp220R">
+            				<p>
+            					<stamp type="postmark"> <!-- contiene una parola o un sintagma che descrive un timbro o simile -->
+            						<mentioned> <!-- codifica parole o sintagmi citati o riportati, non usati. -->
+                                        <note>
+                                        	E' presente un timbro a forma di cerchio con su scritto Modena e Ferrara, rispettivamente nella parte alta e bassa del timbro, nella parte centrale è presente la data in cui è stata spedita la cartolina ma della quale si vedono solamente i numeri '28181 '.
+                                        	
+                                        </note> <!-- contiene una nota o un'annotazione -->
+            								<unclear reason="illeggibile">[...]</unclear>
+            						</mentioned>
+            					</stamp>
+            				</p>
+            			</div>
+
+            			<div type="francobollo" facs="#rigastamp220R">
+                        <p>
+                            <stamp type="postage_stamp">
+                                <note>
+                                    Non è presente nessun francobollo, l'unica scritta leggibile è "Produzione Italiana".
+                                </note>
+                            </stamp>
+                        </p>
+                        </div>
+
+
+
+            			<div type="Message">
+            				<p>
+            					<address> <!-- (address) contiene un indirizzo -->
+            						<lb xml:id="addr220_1" facs="#rigaddr220_1"/>
+            						<!-- lb = segna l'inizio di una nuova riga -->
+            						<addrLine> <!-- (addrline) contiene una riga di un indirizzo -->
+            							<choice>
+            								<!-- "choice" raggruppa un numero di codifiche alternative per la stessa porzione di testo -->
+            								<abbr>Gent</abbr><expan>Gentile</expan>
+            							</choice>
+            							Signorina
+            						</addrLine>
+
+            						<lb xml:id="addr220_2" facs="#rigaddr220_2"/>
+            						<!-- lb = segna l'inizio di una nuova riga -->
+            						<addrLine>
+            							<persName ref="#OT">Olivia Turtura</persName>
+            						</addrLine>
+
+            						<lb xml:id="addr220_3" facs="#rigaddr220_3"/>
+            						<!-- lb = segna l'inizio di una nuova riga -->
+            						<addrLine>
+            							Via Girolamo Rossi 58
+            						</addrLine>
+
+            						<lb xml:id="addr220_4" facs="#rigaddr220_4"/>
+            						<!-- lb = segna l'inizio di una nuova riga -->
+            						<addrLine>
+            							<placeName>
+            								<hi rend="underline">Ravenna</hi>
+            								<!-- "hi" codifica una parola o sintagma in quanto graficamente distinta dal testo circostante & "rend" specifica perché è differente dal resto, in questo caso perché è sottolineato.-->
+            							</placeName>
+            						</addrLine>
+            					</address>
+            				</p>
+
+
+            				<closer>
+            					<!-- (closer) raggruppa dateline, byline, formule conclusive o di saluto ed espressioni simili utilizzate alla fine di una partizione, soprattutto in una lettera -->
+            					<lb xml:id="closer220_1" facs="#rigacloser220_1"/>
+            					<!-- lb = segna l'inizio di una nuova riga -->
+            					<dateline>
+            						<placeName>Modena</placeName>
+            						<date when="1917-10-28">28/10-1917</date>
+            					</dateline>
+
+            					<lb xml:id="closer220_2" facs="#rigacloser220_2"/>
+            					<!-- lb = segna l'inizio di una nuova riga -->
+            					<salute>Affettuosi saluti</salute> <!-- (formula di saluto) contiene una formula introduttiva o di saluto anteposta rispetto a una prefazione, una lettera di dedica o altra partizione testuale, oppure una formula conclusiva o di saluto alla fine di una lettera, prefazione, ecc -->
+
+            					<lb xml:id="closer220_3" facs="#rigacloser220_3"/>
+            					<!-- lb = segna l'inizio di una nuova riga -->
+            					<signed> <!-- (firma) contiene una formula conclusiva o di saluto posposta rispetto a una prefazione, lettera di dedica, o altra partizione testuale. -->
+            						<persName rend="underline" ref="GC">Giovanni</persName>
+            					</signed>
+            				</closer>
+            			</div>
+
+
+            			<div type="codStampa">
+            				<p>
+            					<lb xml:id="numFinale220_1" facs="#riganumFinale220_1"/>
+            					<!-- lb = segna l'inizio di una nuova riga -->
+            					<num>
+            						36-1
+            					</num>
+            				</p>
+            			</div>
+            		</div>
+            	</body>
+            </text>
+
+
+            <facsimile>
+            	<!-- (facsimile) contiene una rappresentazione di una qualche fonte scritta sotto forma di una serie di immagini piuttosto che di testo trascritto o codificato -->
+            	<surface xml:id="fronte220"> <!-- definisce una superficie scritta in termini di uno spazio rettangolare di coordinate, eventualmente che raggruppi una o più rappresentazioni grafiche di tale spazio, e delle zone rettangolari di interesse all'interno di questo -->
+            		<graphic url='7694-220F.jpg' width='537px' height='832px'/>
+            		<zone ulx="8" uly="38" lrx="530" lry="617" />
+            	</surface>
+
+            	<surface xml:id="retro220">
+            		<graphic url='7694-220R.jpg' width='537px' height='832px'/>
+            		<zone xml:id="rigaddr220_1" ulx="399" uly="208" lrx="801" lry="312" /> <!-- Gent. Signorina-->
+            		<zone xml:id="rigaddr220_2" ulx="407" uly="294" lrx="823" lry="356" /> <!-- Olivia Turtura-->
+            		<zone xml:id="rigaddr220_3" ulx="411" uly="364" lrx="828" lry="424" /> <!-- Via Girolamo Rossi 58 -->
+            		<zone xml:id="rigaddr220_4" ulx="412" uly="432" lrx="821" lry="507" /> <!-- Ravenna -->
+            		<zone xml:id="rigacloser220_1" ulx="297" uly="41" lrx="393" lry="507" /> <!-- Modena il 18/10 - 1917 -->
+            		<zone xml:id="rigacloser220_2" ulx="191" uly="44" lrx="294" lry="498" /> <!-- Affettuosissimi saluti -->
+            		<zone xml:id="rigacloser220_3" ulx="93" uly="38" lrx="186" lry="499" /> <!-- Giovanni -->
+            		<zone xml:id="riganumFinale220_1" ulx="359" uly="500" lrx="428" lry="527" /> <!-- 36 - 1 -->
+                </surface>
+            </facsimile>
+    </TEI>
+  
+
+
+<!-- Codifica della seconda cartolina - 7694-173 Fronte e Retro-->
+    <TEI xml:id="cart173">
+    	<teiHeader>
+    		<fileDesc>
+    			<titleStmt>
+    				<title type="main">Edizione digitale di "Donna con cane"</title>
+
+
+    				<respStmt>
+    					<resp>Trascrizione digitale a cura di:</resp>
+    					<name ref="#MCB">Maria Chiara Bertagni, </name>
+    					<name ref="#CT">Claudio Tamburini e </name>
+    					<name ref="#AT">Aurora Toti</name>
+    				</respStmt>
+
+    				<respStmt>
+                        <resp>Ente di Appartenenza:</resp>
+                        <name type="comune" ref="#SP">Comune di La Spezia</name>
+                    </respStmt>
+                </titleStmt>
+
+
+                <editionStmt>
+                	<edition>Studenti iscritti al corso di studi di Informatica Umanistica, Università di Pisa.
+                		<date when="2023-01">Gennaio 2023</date>
+                	</edition>
+
+                    <respStmt>
+                        <resp>codifica di:</resp>
+                        <name ref="#MCB">Maria Chiara Bertagni, </name>
+                        <name ref="#CT">Claudio Tamburini e </name>
+                        <name ref="#AT">Aurora Toti</name>
+                    </respStmt>
+
+                    <respStmt>
+                        <resp>Compilato da:</resp>
+                        <name ref="#TC">Tommaso Castagneto</name>
+                    </respStmt>
+
+                    <respStmt>
+                        <resp>Responsabile scientifico:</resp>
+                        <name ref="#GP">Paolicchi G. ,</name>
+                        <name ref="#ES">Salvatori E.</name>
+                    </respStmt>
+
+                    <respStmt>
+                        <resp>Funzionario responsabile:</resp>
+                        <name ref="#ER">Ratti E.</name>
+                    </respStmt>
+                </editionStmt>
+
+
+                <publicationStmt>
+                	<publisher>Università di Pisa</publisher>
+                	<pubPlace>Pisa</pubPlace>
+                	<availability status="restricted">
+                		<p>Accessibile per ricerche accademiche</p>
+                	</availability>
+                	<date when="2023">2023</date>
+                </publicationStmt>
+
+                <sourceDesc>
+                    <bibl>
+                        <title>Le sorgenti</title>
+                    </bibl>
+                	<msDesc>
+                		<msIdentifier>
+                			<country key="IT">Italia</country>
+                			<settlement>La Spezia (SP)</settlement>
+                			<repository>Museo Civico Etnografico "Giovanni Podenzana", sezione dei cimeli garibaldini e della Prima Guerrra Mondiale.</repository>
+                			<idno>7694_173_001/002</idno>
+                		</msIdentifier>
+
+                		<msContents> <!--  (contenuto del manoscritto) descrive il contenuto intellettuale di un manoscritto o di una sua parte tramite una serie di paragrafi o brani del manoscritto  -->
+                			<summary>Cartolina artistica indirizzata ad Olivia Turtura, da parte di Giovanni Coliola, durante gli anni della Grande Guerra.</summary> <!-- (summary) contiene una panoramica delle informazioni disponibili riguardanti alcuni aspetti di un articolo o di un oggetto (ad esempio, il suo contenuto intellettuale, la storia, il layout, la tipografia ecc.) come complemento o alternativa alle informazioni più dettagliate fornite da elementi più specifici. -->
+                			<textLang>Italiano</textLang>
+                		</msContents>
+
+                		<physDesc> <!-- (descrizione fisica) contiene una descrizione fisica completa di un manoscritto o di una sua parte. -->
+                			<objectDesc> <!-- (object description) contiene una descrizione delle componenti fisiche che costituiscono l'oggetto descritto. -->
+                				<supportDesc> <!-- (descrizione del supporto) raggruppa gli elementi che descrivono il supporto fisico della parte scritta di un manoscritto -->
+                					<support> <!-- (support) contiene una descrizione dei materiali, ecc. che costituiscono il supporto fisico della parte scritta di un manoscritto  -->
+                						<objectType>Cartolina artistica</objectType> <!-- (objectType) contiene una parola o una frase che descrive il tipo di oggetto a cui si fa riferimento. -->
+                						<material>Carta</material>
+                						<dimensions unit="cm">
+                							<height>9</height>
+                							<width>14</width>
+                						</dimensions>
+                						</support>
+                						<condition>Buono</condition>
+                					</supportDesc>
+                				</objectDesc>
+
+                				<handDesc> <!-- (handDesc) contiene una descrizione dei diversi tipi di scrittura usati in un manoscritto -->
+                					<handNote scribe="catalogatore" medium="pencil" scope="minor"> <!-- (handNote) descrive un determinato stile o una determinata mano all'interno di un manoscritto -->
+                						<p>
+                							In alto a destra della cartolina è riportato il numero <num value="173">173</num> usato per la catalogazione.
+                						</p>
+                					</handNote>
+                					<handNote scribe="tipografo" medium="black-ink" scope="minor">
+                						<p>
+                							All'interno della cartolina è riportata una stampa.
+                						</p>
+                					</handNote>
+                				</handDesc>
+                			</physDesc>
+                		</msDesc>
+
+
+                		<listPerson> <!-- (listPerson) contiene una lista di descrizioni, ciascuna delle quali fornisce informazioni relative a una persona specifica o a un gruppo di persone, per esempio i partecipanti a un'interazione verbale o le persone identificate da una fonte storica-->
+                			<person>
+                				<persName ref="#OT">
+                					<forename>Olivia</forename>
+                					<surname>Turtura</surname>
+                				</persName>
+                				<sex>F</sex>
+                			</person>
+                			<person>
+                				<persName ref="#GC">
+                					<forename>Giovanni</forename>
+                					<surname>Coliola</surname>
+                				</persName>
+                				<sex>M</sex>
+                			</person>
+                		</listPerson>
+
+                		<listPlace> <!-- (listPlace) contiene un elenco di luoghi, che può essere seguito da un elenco di relazioni definite tra i luoghi. -->
+                			<place>
+                				<placeName>Ravenna</placeName>
+                				<settlement type="località">Città</settlement>
+                				<district type="provincia">RV</district>
+                				<country key="IT">Italia</country>
+                			</place>
+                			<place>
+                				<placeName>Modena</placeName>
+                				<settlement type="località">Città</settlement>
+                				<district type="provincia">MO</district>
+                				<country key="IT">Italia</country>
+                			</place>
+                		</listPlace>
+                	</sourceDesc>
+                </fileDesc>
+
+
+                <profileDesc> <!-- (profileDesc) fornisce una descrizione dettagliata degli aspetti non bibliografici di un testo, in modo particolare le lingue e i linguaggi secondari utilizzati, la situazione in cui è stato prodotto il testo, i partecipanti e la relativa ambientazione. -->
+                	<correspDesc> <!-- (correspDesc) contiene una descrizione delle azioni intorno a un atto di corrispondenza epistolare. -->
+                		<correspAction type="received"> <!-- (correspAction) contiene una descrizione strutturata del luogo, il nome di una persona/organizzazione e la data relativa all'invio/ricezione di un messaggio o qualsiasi altra azione relativa alla corrispondenza. -->
+                			<persName>Olivia Turtura</persName>
+                		</correspAction>
+                		<correspAction type="sent">
+                			<persName>Giovanni Coliola</persName>
+                			<date when="1917-07-01">1 luglio 1917</date>
+                		</correspAction>
+                	</correspDesc>
+
+                	<langUsage>
+                		<language ident="it-IT" usage="100">Italiano</language>
+                	</langUsage>
+                </profileDesc>
+        </teiHeader>
+
+
+            <text type="cartolina" xml:lang="it">
+            	<body>
+            		<div type="fronte">
+            			<figure xml:id="picture173F"> <!-- (figure) contiene una porzione di testo costituita da grafici, illustrazioni o figure. -->
+            				<graphic url="7694-173F.jpg"/> <!-- (graphic) indica la posizione di un grafico, di una illustrazione o immagine. -->
+            				<head>Le sorgenti</head> <!-- (head) contiene qualsiasi tipo di titolo -->
+            				<figDesc>
+            					Nell'immagine è rappresentata una madre che disseta il figlio alla sorgente, mentre allatta al seno l'altro.
+            				</figDesc>
+            			</figure>
+            		</div>
+
+
+            		<!-- Trascrizione della cartolina 173-->
+            		<div type="retro">
+            			<div type="codice">
+            				<p>
+            					<lb xml:id="num173R" facs="#rigastamp173R"/> 
+            					 <!-- lb = segna l'inizio di una nuova riga -->
+            					<num type="cardinal">173</num>
+            				</p>
+            			</div>
+
+            			<div type="timbro" facs="#rigastamp173R">
+            				<p>
+            					<stamp type="postmark"> <!-- contiene una parola o un sintagma che descrive un timbro o simile -->
+            						<mentioned> <!-- codifica parole o sintagmi citati o riportati, non usati. -->
+                                        <note>
+                                        	E' presente un timbro a forma di cerchio con scritto Modena e Ferrara, rispettivamente nella parte alta e bassa del timbro, nella parte centrale è presente la data in cui è stata spedita la cartolina della quale si vedono i numeri e le scritte: MODENA 1-7.17.23 FERR 
+                                        	
+                                        </note> <!-- contiene una nota o un'annotazione -->
+            								<unclear reason="illeggibile">[...]</unclear>
+            						</mentioned>
+            					</stamp>
+            				</p>
+            			</div>
+
+            			<div type="francobollo" facs="#rigastamp173R">
+                        <p>
+                            <stamp type="postage_stamp">
+                                <note>
+                                    Francobollo del Regno d'Italia da 5 centesimi delle Poste
+                                    Italiane nel 1906 in verticale. Rappresenta il volto di profilo di Vittorio Emanuele III. Nella parte sinistra troviamo "Proprietà artistica riservata - Casa.Ed. d'Arte Bestetti e Tumminelli - Milano in verticale.
+                                </note>
+                            </stamp>
+                        </p>
+                        </div>
+
+            			<div type="Message">
+            				<p>
+            					<address> <!-- (address) contiene un indirizzo -->
+            						<lb xml:id="addr173_1" facs="#rigaddr173_1"/>
+            						<!-- lb = segna l'inizio di una nuova riga -->
+            						<addrLine> <!-- (addrline) contiene una riga di un indirizzo -->
+            							<choice>
+            								<!-- "choice" raggruppa un numero di codifiche alternative per la stessa porzione di testo -->
+            								<abbr>Gent</abbr><expan>Gentile</expan>
+            							</choice>
+            							Signorina
+            						</addrLine>
+
+            						<lb xml:id="addr173_2" facs="#rigaddr173_2"/>
+            						<!-- lb = segna l'inizio di una nuova riga -->
+            						<addrLine>
+            							<persName ref="#OT">Olivia Turtura</persName>
+            						</addrLine>
+
+            						<lb xml:id="addr173_3" facs="#rigaddr173_3"/>
+            						<!-- lb = segna l'inizio di una nuova riga -->
+            						<addrLine>
+            							Via Girolamo Rossi 58
+            						</addrLine>
+
+            						<lb xml:id="addr173_4" facs="#rigaddr173_4"/>
+            						<!-- lb = segna l'inizio di una nuova riga -->
+            						<addrLine>
+            							<placeName>
+            								<hi rend="underline">Ravenna</hi>
+            								<!-- "hi" codifica una parola o sintagma in quanto graficamente distinta dal testo circostante & "rend" specifica perché è differente dal resto, in questo caso perché è sottolineato.-->
+            							</placeName>
+            						</addrLine>
+            					</address>
+            				</p>
+
+
+            				<closer>
+            					<!-- (closer) raggruppa dateline, byline, formule conclusive o di saluto ed espressioni simili utilizzate alla fine di una partizione, soprattutto in una lettera -->
+            					<lb xml:id="closer173_1" facs="#rigacloser173_1"/>
+            					<!-- lb = segna l'inizio di una nuova riga -->
+            					<dateline>
+            						<placeName>Modena</placeName>
+            						<date when="1917-10-28">01/07-1917</date>
+            					</dateline>
+
+            					<lb xml:id="closer173_2" facs="#rigacloser173_2"/>
+            					<!-- lb = segna l'inizio di una nuova riga -->
+            					<salute>Affettuosamente ti ricordo saluti a tutti</salute> <!-- (formula di saluto) contiene una formula introduttiva o di saluto anteposta rispetto a una prefazione, una lettera di dedica o altra partizione testuale, oppure una formula conclusiva o di saluto alla fine di una lettera, prefazione, ecc -->
+
+            					<lb xml:id="closer173_3" facs="#rigacloser173_3"/>
+            					<!-- lb = segna l'inizio di una nuova riga -->
+            					<signed> <!-- (firma) contiene una formula conclusiva o di saluto posposta rispetto a una prefazione, lettera di dedica, o altra partizione testuale. -->
+            						<persName rend="underline" ref="GC">Giovanni</persName>
+            					</signed>
+            				</closer>
+            			</div>
+
+
+            			<div type="codStampa">
+            				<p>
+            					<lb xml:id="numFinale173_1" facs="#riganumFinale173_1"/>
+            					<!-- lb = segna l'inizio di una nuova riga -->
+            					<num>
+            						129
+            					</num>
+            				</p>
+            			</div>
+            		</div>
+            	</body>
+            </text>
+
+
+            <facsimile>
+            	<!-- (facsimile) contiene una rappresentazione di una qualche fonte scritta sotto forma di una serie di immagini piuttosto che di testo trascritto o codificato -->
+            	<surface xml:id="fronte173"> <!-- definisce una superficie scritta in termini di uno spazio rettangolare di coordinate, eventualmente che raggruppi una o più rappresentazioni grafiche di tale spazio, e delle zone rettangolari di interesse all'interno di questo -->
+            		<graphic url="7694-173F.jpg" width="1056px" height="1638px"/>
+            		
+            	</surface>
+
+            	<surface xml:id="retro173">
+            		<graphic url="7694-173R.jpg" width="16376px" height="1043px"/>
+               		<zone xml:id="rigaddr173_1" ulx="797" uly="351" lrx="1475" lry="532" /> <!-- Gent Sig.-->
+            		<zone xml:id="rigaddr173_2" ulx="811" uly="528" lrx="1529" lry="634" /> <!-- Olivia Turtura-->
+            		<zone xml:id="rigaddr173_3" ulx="790" uly="640" lrx="1604" lry="756" /> <!-- Via Girolamo Rossi 58 -->
+            		<zone xml:id="rigaddr173_4" ulx="1014" uly="774" lrx="1619" lry="953" /> <!-- Ravenna -->
+            		<zone xml:id="rigacloser173_1" ulx="629" uly="105" lrx="798" lry="896" /> <!-- Modena il 01/07-1917 -->
+            		<zone xml:id="rigacloser173_2" ulx="413" uly="58" lrx="584" lry="931" /> <!-- Affettuosamente ti ricordo saluti a tutti -->
+            		<zone xml:id="rigacloser173_3" ulx="167" uly="89" lrx="355" lry="938" /> <!-- Giovanni -->
+            		<zone xml:id="riganumFinale173_1" ulx="732" uly="989" lrx="800" lry="1027" /> <!-- 129  -->
+                </surface>
+            </facsimile>
+    </TEI>
+ 
+
+
+
+    <!-- Codifica della terza cartolina - 7694-163 Fronte e Retro-->
+    <TEI xml:id="cart163">
+    	<teiHeader>
+    		<fileDesc>
+    			<titleStmt>
+    				<title type="main">Edizione digitale di "Coppia a sciare"</title>
+
+
+    				<respStmt>
+    					<resp>Trascrizione digitale a cura di:</resp>
+    					<name ref="#MCB">Maria Chiara Bertagni, </name>
+    					<name ref="#CT">Claudio Tamburini e </name>
+    					<name ref="#AT">Aurora Toti</name>
+    				</respStmt>
+
+    				<respStmt>
+                        <resp>Ente di Appartenenza:</resp>
+                        <name type="comune" ref="#SP">Comune di La Spezia</name>
+                    </respStmt>
+                </titleStmt>
+
+
+                <editionStmt>
+                	<edition>Studenti iscritti al corso di studi di Informatica Umanistica, Università di Pisa.
+                		<date when="2023-01">Gennaio 2023</date>
+                	</edition>
+
+                    <respStmt>
+                        <resp>codifica di:</resp>
+                        <name ref="#MCB">Maria Chiara Bertagni, </name>
+                        <name ref="#CT">Claudio Tamburini e </name>
+                        <name ref="#AT">Aurora Toti</name>
+                    </respStmt>
+
+                    <respStmt>
+                        <resp>Compilato da:</resp>
+                        <name ref="#TC">Tommaso Castagneto</name>
+                    </respStmt>
+
+                    <respStmt>
+                        <resp>Responsabile scientifico:</resp>
+                        <name ref="#GP">Paolicchi G.</name>
+                        <name ref="#ES">Salvatori E.</name>
+                    </respStmt>
+
+                    <respStmt>
+                        <resp>Funzionario responsabile</resp>
+                        <name ref="#ER">Ratti E.</name>
+                    </respStmt>
+                </editionStmt>
+
+
+                <publicationStmt>
+                	<publisher>Università di Pisa</publisher>
+                	<pubPlace>Pisa</pubPlace>
+                	<availability status="restricted">
+                		<p>Accessibile per ricerche accademiche</p>
+                	</availability>
+                	<date when="2023">2023</date>
+                </publicationStmt>
+
+                <sourceDesc>
+                    <bibl>
+                        <title>Coppia a sciare</title>
+                    </bibl>
+                	<msDesc>
+                		<msIdentifier>
+                			<country key="IT">Italia</country>
+                			<settlement>La Spezia (SP)</settlement>
+                			<repository>Museo Civico Etnografico "Giovanni Podenzana", sezione dei cimeli garibaldini e della Prima Guerrra Mondiale.</repository>
+                			<idno>7694_163_001/002</idno>
+                		</msIdentifier>
+
+                		<msContents> <!--  (contenuto del manoscritto) descrive il contenuto intellettuale di un manoscritto o di una sua parte tramite una serie di paragrafi o brani del manoscritto  -->
+                			<summary>Cartolina artistica indirizzata ad Olivia Turtura, da parte di Giovanni Coliola, durante gli anni della Grande Guerra.</summary> <!-- (summary) contiene una panoramica delle informazioni disponibili riguardanti alcuni aspetti di un articolo o di un oggetto (ad esempio, il suo contenuto intellettuale, la storia, il layout, la tipografia ecc.) come complemento o alternativa alle informazioni più dettagliate fornite da elementi più specifici. -->
+                			<textLang>Italiano</textLang>
+                		</msContents>
+
+                		<physDesc> <!-- (descrizione fisica) contiene una descrizione fisica completa di un manoscritto o di una sua parte. -->
+                			<objectDesc> <!-- (object description) contiene una descrizione delle componenti fisiche che costituiscono l'oggetto descritto. -->
+                				<supportDesc> <!-- (descrizione del supporto) raggruppa gli elementi che descrivono il supporto fisico della parte scritta di un manoscritto -->
+                					<support> <!-- (support) contiene una descrizione dei materiali, ecc. che costituiscono il supporto fisico della parte scritta di un manoscritto  -->
+                						<objectType>Cartolina artistica</objectType> <!-- (objectType) contiene una parola o una frase che descrive il tipo di oggetto a cui si fa riferimento. -->
+                						<material>Carta</material>
+                						<dimensions unit="cm">
+                							<height>9</height>
+                							<width>14</width>
+                						</dimensions>
+                						</support>
+                						<condition>Buono</condition>
+                					</supportDesc>
+                				</objectDesc>
+
+                				<handDesc> <!-- (handDesc) contiene una descrizione dei diversi tipi di scrittura usati in un manoscritto -->
+                					<handNote scribe="catalogatore" medium="pencil" scope="minor"> <!-- (handNote) descrive un determinato stile o una determinata mano all'interno di un manoscritto -->
+                						<p>
+                							In alto a destra della cartolina è riportato il numero <num value="163">163</num> usato per la catalogazione.
+                						</p>
+                					</handNote>
+                					<handNote scribe="tipografo" medium="black-ink" scope="minor">
+                						<p>
+                							All'interno della cartolina è riportata una stampa.
+                						</p>
+                					</handNote>
+                				</handDesc>
+                			</physDesc>
+                		</msDesc>
+
+
+                		<listPerson> <!-- (listPerson) contiene una lista di descrizioni, ciascuna delle quali fornisce informazioni relative a una persona specifica o a un gruppo di persone, per esempio i partecipanti a un'interazione verbale o le persone identificate da una fonte storica-->
+                			<person>
+                				<persName ref="#OT">
+                					<forename>Olivia</forename>
+                					<surname>Turtura</surname>
+                				</persName>
+                				<sex>F</sex>
+                			</person>
+                			<person>
+                				<persName ref="#GC">
+                					<forename>Giovanni</forename>
+                					<surname>Coliola</surname>
+                				</persName>
+                				<sex>M</sex>
+                			</person>
+                		</listPerson>
+
+                		<listPlace> <!-- (listPlace) contiene un elenco di luoghi, che può essere seguito da un elenco di relazioni definite tra i luoghi. -->
+                			<place>
+                				<placeName>Ravenna</placeName>
+                				<settlement type="località">Città</settlement>
+                				<district type="provincia">RV</district>
+                				<country key="IT">Italia</country>
+                			</place>
+                			<place>
+                				<placeName>Felice sul Panaro</placeName>
+                				<settlement type="località">Città</settlement>
+                				<district type="provincia">MO</district>
+                				<country key="IT">Italia</country>
+                			</place>
+                		</listPlace>
+                </sourceDesc>
+            </fileDesc>
+
+
+                <profileDesc> <!-- (profileDesc) fornisce una descrizione dettagliata degli aspetti non bibliografici di un testo, in modo particolare le lingue e i linguaggi secondari utilizzati, la situazione in cui è stato prodotto il testo, i partecipanti e la relativa ambientazione. -->
+                	<correspDesc> <!-- (correspDesc) contiene una descrizione delle azioni intorno a un atto di corrispondenza epistolare. -->
+                		<correspAction type="received"> <!-- (correspAction) contiene una descrizione strutturata del luogo, il nome di una persona/organizzazione e la data relativa all'invio/ricezione di un messaggio o qualsiasi altra azione relativa alla corrispondenza. -->
+                			<persName>Olivia Turtura</persName>
+                		</correspAction>
+                		<correspAction type="sent">
+                			<persName>Giovanni Coliola</persName>
+                			<date when="1918-04-27">27 aprile 1918</date>
+                		</correspAction>
+                	</correspDesc>
+
+                	<langUsage>
+                		<language ident="it-IT" usage="100">Italiano</language>
+                	</langUsage>
+                </profileDesc>
+        </teiHeader>
+
+
+            <text type="cartolina" xml:lang="it">
+            	<body>
+					<div type="fronte">
+            			<figure xml:id="picture163F"> <!-- (figure) contiene una porzione di testo costituita da grafici, illustrazioni o figure. -->
+            				<graphic url="7694-163F.jpeg"/> <!-- (graphic) indica la posizione di un grafico, di una illustrazione o immagine. -->
+            				<head>Coppia a sciare</head> <!-- (head) contiene qualsiasi tipo di titolo -->
+            				<figDesc>
+            					Nell'immagine è rappresentata una coppia che scia.
+            				</figDesc>
+            			</figure>
+            		</div>
+
+
+            		<!-- Trascrizione della cartolina 163-->
+            		<div type="retro">
+            			<div type="codice">
+            				<p>
+            					<lb xml:id="num163R" facs="#rigastamp163R"/>
+            					<graphic url="7694-163R.jpeg"/>
+            					<!-- lb = segna l'inizio di una nuova riga -->
+            					<num type="cardinal">163</num>
+            				</p>
+            			</div>
+
+            			<div type="timbro" facs="#rigastamp163R">
+            				<p>
+            					<stamp type="postmark"> <!-- contiene una parola o un sintagma che descrive un timbro o simile -->
+            						<mentioned> <!-- codifica parole o sintagmi citati o riportati, non usati. -->
+                                        <note>
+                                        	In alto a destra è presente un timbro a forma di cerchio che riporta la scritta San Felice sul Panaro e i numeri 39-72. Nella parte centrale di quest'ultimo è presente la data in cui è stata spedita la cartolina ovvero il 29.04.1918. 
+                                        	
+                                        </note> <!-- contiene una nota o un'annotazione -->
+            						</mentioned>
+            					</stamp>
+            				</p>
+            			</div>
+
+            			<div type="francobollo" facs="#rigastamp163R">
+                        <p>
+                            <stamp type="postage_stamp">
+                                <note>
+                                    Francobollo del Regno d'Italia da 5 centesimi delle Poste
+                                    Italiane nel 1906 in orizzontale. Rappresenta il volto di profilo di Vittorio Emanuele III. Nella parte sinistra troviamo "Proprietà artistica riservata - Casa.Ed. d'Arte Bestetti e Tumminelli - Milano in verticale. Sul retro troviamo la stampa "Visto Rev. Stampa Milano 1020".
+                                </note>
+                            </stamp>
+                        </p>
+                        </div>
+
+
+            			<div type="Message">
+            				<p>
+            					<address> <!-- (address) contiene un indirizzo -->
+            						<lb xml:id="addr163_1" facs="#rigaddr163_1"/>
+            						<!-- lb = segna l'inizio di una nuova riga -->
+            						<addrLine> <!-- (addrline) contiene una riga di un indirizzo -->
+            							<choice>
+            								<!-- "choice" raggruppa un numero di codifiche alternative per la stessa porzione di testo -->
+											<abbr>Gent</abbr><expan>Gentile</expan>
+            							</choice>
+            							Sig
+            						</addrLine>
+
+            						<lb xml:id="addr163_2" facs="#rigaddr163_2"/>
+            						<!-- lb = segna l'inizio di una nuova riga -->
+            						<addrLine>
+            							<persName ref="#OT">Olivia Turtura</persName>
+            						</addrLine>
+
+            						<lb xml:id="addr163_3" facs="#rigaddr163_3"/>
+            						<!-- lb = segna l'inizio di una nuova riga -->
+            						<addrLine>
+            							Via Girolamo Rossi 58
+            						</addrLine>
+
+            						<lb xml:id="addr163_4" facs="#rigaddr163_4"/>
+            						<!-- lb = segna l'inizio di una nuova riga -->
+            						<addrLine>
+            							<placeName>
+            								<hi rend="underline">Ravenna</hi>
+            								<!-- "hi" codifica una parola o sintagma in quanto graficamente distinta dal testo circostante & "rend" specifica perché è differente dal resto, in questo caso perché è sottolineato.-->
+            							</placeName>
+            						</addrLine>
+            					</address>
+            				</p>
+
+
+            				<closer>
+            					<!-- (closer) raggruppa dateline, byline, formule conclusive o di saluto ed espressioni simili utilizzate alla fine di una partizione, soprattutto in una lettera -->
+            					<lb xml:id="closer163_1" facs="#rigacloser163_1"/>
+            					<!-- lb = segna l'inizio di una nuova riga -->
+            					<dateline>
+            						<placeName>S.Felice</placeName>
+            						<date when="1917-10-28">27/04-1918</date>
+            					</dateline>
+
+            					<lb xml:id="closer163_2" facs="#rigacloser163_2"/>
+            					<!-- lb = segna l'inizio di una nuova riga -->
+            					<salute>Sempre tuo</salute> <!-- (formula di saluto) contiene una formula introduttiva o di saluto anteposta rispetto a una prefazione, una lettera di dedica o altra partizione testuale, oppure una formula conclusiva o di saluto alla fine di una lettera, prefazione, ecc -->
+
+            					<lb xml:id="closer163_3" facs="#rigacloser163_3"/>
+            					<!-- lb = segna l'inizio di una nuova riga -->
+            					<signed> <!-- (firma) contiene una formula conclusiva o di saluto posposta rispetto a una prefazione, lettera di dedica, o altra partizione testuale. -->
+            						<persName rend="underline" ref="GC">Giovanni</persName>
+            					</signed>
+            				</closer>
+            			</div>
+
+
+            			<div type="codStampa">
+            				<p>
+            					<lb xml:id="numFinale163_1" facs="#riganumFinale163_1"/>
+            					<!-- lb = segna l'inizio di una nuova riga -->
+            					<num>
+            						918/6
+            					</num>
+            				</p>
+            			</div>
+            		</div>
+            	</body>
+            </text>
+
+
+			<facsimile>
+            	<!-- (facsimile) contiene una rappresentazione di una qualche fonte scritta sotto forma di una serie di immagini piuttosto che di testo trascritto o codificato -->
+            	<surface xml:id="fronte163"> <!-- definisce una superficie scritta in termini di uno spazio rettangolare di coordinate, eventualmente che raggruppi una o più rappresentazioni grafiche di tale spazio, e delle zone rettangolari di interesse all'interno di questo -->
+            		<graphic url='7694-163F.jpeg' width='993px' height='1600px'/>
+            		<zone ulx="8" uly="38" lrx="530" lry="617" />
+            	</surface>
+
+            	<surface xml:id="retro163">
+            		<graphic url='7694-163R.jpeg' width='1600px' height='994px'/>
+            		<zone xml:id="rigaddr163_1" ulx="767" uly="272" lrx="1318" lry="421" /> <!-- Gent Sig.-->
+            		<zone xml:id="rigaddr163_2" ulx="791" uly="432" lrx="1503" lry="535" /> <!-- Olivia Turtura-->
+            		<zone xml:id="rigaddr163_3" ulx="761" uly="553" lrx="1590" lry="679" /> <!-- Via Girolamo Rossi 58 -->
+            		<zone xml:id="rigaddr163_4" ulx="755" uly="692" lrx="1579" lry="894" /> <!-- Ravenna -->
+            		<zone xml:id="rigacloser163_1" ulx="503" uly="54" lrx="740" lry="956" /> <!-- S.Felice il 27/04 - 18 -->
+            		<zone xml:id="rigacloser163_2" ulx="333" uly="89" lrx="525" lry="751" /> <!-- Sempre tuo -->
+            		<zone xml:id="rigacloser163_3" ulx="152" uly="43" lrx="338" lry="845" /> <!-- Giovanni -->
+            		<zone xml:id="riganumFinale163_1" ulx="694" uly="880" lrx="777" lry="923" /> <!-- 918 / 6 -->
+                </surface>
+            </facsimile>
+    </TEI>
+</teiCorpus>

@@ -55,12 +55,7 @@
 			</publicationStmt>
 
 			<sourceDesc><!-- (descrizione della fonte) fornisce una descrizione relativa alla o alle fonti da cui è derivato o generato un documento elettronico. -->
-				<bibl>
-					<title>Le sorgenti</title>
-					<publisher>
-						<unclear reason="non presente">[...]</unclear>
-					</publisher>
-                 </bibl>
+				
                 <msDesc> <!-- (decrizione del manoscritto) contiene la descrizione di un unico manoscritto -->
                     <msIdentifier> <!-- (identificatore del manoscritto) contiene l'informazione necessaria a identificare il manoscritto esaminato -->
                         <country key="IT">Italy</country> <!-- (country) contiene il nome di un'unità geopolitica, come una nazione, un paese, una colonia, o un'unione di stati, che sia più ampia o amministrativamente superiore rispetto a una regione ma di dimensioni inferiori rispetto a un blocco -->

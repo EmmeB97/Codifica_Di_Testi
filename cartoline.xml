@@ -23,9 +23,7 @@
 			</titleStmt>
 
 			<editionStmt> <!-- (dichiarazione sull'edizione) raggruppa le informazioni riguardo una edizione di un testo. -->
-				<edition>Studenti iscritti al corso di studi di Informatica Umanistica, Università di Pisa.
-					<date when="2022-12">Dicembre 2022</date>
-				</edition>
+				
 				<respStmt>
 					<resp>codifica di:</resp>
 					    <name ref="#MCB">Maria Chiara Bertagni, </name>
@@ -92,9 +90,7 @@
 
 
                 <editionStmt>
-                	<edition>Studenti iscritti al corso di studi di Informatica Umanistica, Università di Pisa.
-                		<date when="2022-12">Dicembre 2022</date>
-                	</edition>
+                	
 
                     <respStmt>
                         <resp>codifica di:</resp>
@@ -400,9 +396,7 @@
 
 
                 <editionStmt>
-                	<edition>Studenti iscritti al corso di studi di Informatica Umanistica, Università di Pisa.
-                		<date when="2023-01">Gennaio 2023</date>
-                	</edition>
+                	
 
                     <respStmt>
                         <resp>codifica di:</resp>
@@ -707,9 +701,7 @@
 
 
                 <editionStmt>
-                	<edition>Studenti iscritti al corso di studi di Informatica Umanistica, Università di Pisa.
-                		<date when="2023-01">Gennaio 2023</date>
-                	</edition>
+                	
 
                     <respStmt>
                         <resp>codifica di:</resp>

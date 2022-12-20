@@ -206,7 +206,14 @@
 		<xsl:template match="tei:lb">
 			<!-- (inizio di riga(lb)) segna l'inizio di una nuova riga (tipografica) in qualche edizione o versione di un testo -->
 			<br />
+			<span id= "{@facs}"> <xsl:value-of select ="@n" /> </span>
+			
+			
 		</xsl:template>
+	
+	
+	
+	
 
 		<xsl:template match="tei:text//*[@type='stampe_cartolina']/tei:ab">
 			<!-- (blocco anonimo (ab)) contiene una qualsiasi unità testuale a livello di componente che funge da contenitore anonimo di sintagmi o elementi interlivello simili al paragrafo ma senza il bagaglio semantico di quest'ultimo -->

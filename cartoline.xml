@@ -2,7 +2,7 @@
 <!DOCTYPE teiCorpus SYSTEM "tei_all.dtd">
 <?xml-stylesheet type="text/xsl" href="stile.xsl"?> <!-- COLLEGAMENTO CON IL FILE XSL -->
 
-<teiCorpus version="3.3.0" xmlns="http://www.tei-c.org/ns/1.0">
+<teiCorpus version="4.5.0" xmlns="http://www.tei-c.org/ns/1.0">
 	<!-- header -->
 	<teiHeader> <!-- fornisce metadati descrittivi e dichiarativi associati a una risorsa digitale o a un insieme di risorse. -->
 		<fileDesc> <!--  (descrizione del file) contiene una descrizione bibliografica completa di un file elettronico. -->
